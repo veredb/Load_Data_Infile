@@ -1,0 +1,10 @@
+== README
+
+
+This is a Rails 4 project, which uses MySQL database.
+
+The goal of this project is to transfer data from a csv file into Mysql model, using Load Data Infile command
+and to compare how fast it runs to a rake task command -- rake import.
+
+The result is that Load data infile runs about a 100 times faster than rake.
+Please view Rake Import repo for more information.
