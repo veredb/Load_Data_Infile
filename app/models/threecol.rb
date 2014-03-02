@@ -25,5 +25,5 @@ ActiveRecord::Base.connection.execute("CREATE TABLE `test_models` (`id` int(11) 
 
 puts "Loading data to db"
 puts Benchmark.measure {
-     ActiveRecord::Base.connection.execute("LOAD DATA LOCAL INFILE 'lib/ms_data_encoder/file3.csv' INTO TABLE test_models FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (wor, sym)")
+     ActiveRecord::Base.connection.execute("LOAD DATA LOCAL INFILE 'lib/file3.csv' INTO TABLE test_models FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' (wor, sym)")
 }
